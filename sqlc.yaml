@@ -1,0 +1,9 @@
+version: "2"
+sql:
+  - engine: "sqlite"
+    schema: "scripts/schema.sql"
+    queries: "scripts/query.sql"
+    gen:
+      go:
+        package: "genscripts"
+        out: "genscripts"
